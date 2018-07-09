@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{1E2904D3-11DC-70CC-DB98-9D11D95CE67E}") = "ABCN Game", "Assembly-CSharp.csproj", "{1939F8CA-4C24-CAA3-FEEB-8B59B3ABF036}"
+EndProject
+Project("{1E2904D3-11DC-70CC-DB98-9D11D95CE67E}") = "ABCN Game", "Assembly-CSharp-Editor.csproj", "{1B1449EB-2478-6F7D-1009-87027DBCBFC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1939F8CA-4C24-CAA3-FEEB-8B59B3ABF036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1939F8CA-4C24-CAA3-FEEB-8B59B3ABF036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1939F8CA-4C24-CAA3-FEEB-8B59B3ABF036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1939F8CA-4C24-CAA3-FEEB-8B59B3ABF036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1449EB-2478-6F7D-1009-87027DBCBFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1449EB-2478-6F7D-1009-87027DBCBFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1449EB-2478-6F7D-1009-87027DBCBFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1449EB-2478-6F7D-1009-87027DBCBFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
