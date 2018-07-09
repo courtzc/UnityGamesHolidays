@@ -7,4 +7,8 @@ PhysicsMaterial2D:
   m_PrefabInternal: {fileID: 0}
   m_Name: 2DBounce
   friction: 0.4
+<<<<<<< HEAD
   bounciness: 2.3
+=======
+  bounciness: 3
+>>>>>>> 044f27504b917047986c8478b88795690d82cb6f
