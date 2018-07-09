@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 61000011291908218}
   - component: {fileID: 212581324888565068}
   m_Layer: 0
-  m_Name: LevelBlockNoShadow
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
