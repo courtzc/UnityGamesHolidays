@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 82000010728682298}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   myPortalControllers:
   - {fileID: 0}
   levelToLoad: BlankLevel
-  numToCollect: 0
+  numToCollect: 1
 --- !u!114 &114000012940765290
 MonoBehaviour:
   m_ObjectHideFlags: 1
