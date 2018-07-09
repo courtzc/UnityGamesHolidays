@@ -1,9 +1,13 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO;
+using System;
 
 public class Collectable : MonoBehaviour {
 
 	private GameManager myManager;
+    public GameObject collectable;
 
 	// Use this for initialization
 	void Start () 
@@ -19,14 +23,10 @@ public class Collectable : MonoBehaviour {
 	//if something enters the collectable
 	void OnTriggerEnter2D(Collider2D coll) 
 	{
-		
-		GameObject.Find("CollectSound").GetComponent<AudioSource>().Play();
+        Debug.Log("I'm collecting the collectable");
+
 		myManager.numToCollect--;
 
-		Destroy(gameObject);
-
-
-
+		Destroy(collectable);
 	}
-
 }
