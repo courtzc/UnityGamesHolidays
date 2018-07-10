@@ -68,6 +68,7 @@
     <Compile Include="Assets\Light2DAsset\Scripts\Helpers\TablaSenoCoseno.cs" />
     <Compile Include="Assets\Light2DAsset\Scripts\rotate.cs" />
     <Compile Include="Assets\Scripts\GameLogic\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\PlatformController.cs" />
     <Compile Include="Assets\Scripts\GameLogic\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameLogic\PlayerGrounded.cs" />
     <Compile Include="Assets\Scripts\GameLogic\PlayerSettings.cs" />
