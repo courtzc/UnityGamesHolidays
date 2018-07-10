@@ -4,10 +4,10 @@ using System.Collections;
 public class PortalController : MonoBehaviour
 {
 
-    //the target is the player that should use this portal
+    // the target is the player that should use this portal
     [Header("Drag the player who trying to get to this portal into it")]
     public GameObject target;
-    //is the target in the portal?
+    // is the target in the portal?
     [HideInInspector]
     public bool isTarget = false;
 

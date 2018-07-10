@@ -19,7 +19,6 @@ public class PlayerGrounded : MonoBehaviour {
 	{
 		//set player grounded
 		myPlayerSettings.isGrounded = true;
-		//myPlayerSettings.isWallGrounded = true;
 
 	}
 	void OnTriggerExit2D(Collider2D coll) 
@@ -32,6 +31,5 @@ public class PlayerGrounded : MonoBehaviour {
 	{
 		//set player grounded
 		myPlayerSettings.isGrounded = true;
-		//myPlayerSettings.isWallGrounded = true;
 	}
 }
