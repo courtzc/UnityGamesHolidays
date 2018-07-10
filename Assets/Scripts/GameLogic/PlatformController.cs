@@ -17,22 +17,48 @@ public class PlatformController : MonoBehaviour
 
     public void Start()
     {
-        
+
     }
 
     public void Update()
     {
-        
+        PlatformMove();
     }
 
-    public void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D coll)
     {
-        
+        if (coll.transform.name == "Player")
+        {
+            Debug.Log("I'm colliding");
+            coll.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().isKinematic = true;
+            coll.transform.parent = transform;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                coll.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+            }
+        }
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+
+    public void OnTriggerExit2D(Collider2D coll)
     {
-        
+        Debug.Log("I'm no longer colliding");
+        coll.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        GetComponent<Rigidbody2D>().isKinematic = false;
+
+        Debug.Log("I have detached and made people orphans");
+        transform.DetachChildren();
     }
 
+
+
+
+
+    public void PlatformMove()
+    {
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, distanceLeft, distanceRight),
+            Mathf.Clamp(transform.position.y, distanceUp, distanceDown), transform.position.z);
+    }
 }

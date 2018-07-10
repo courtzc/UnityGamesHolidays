@@ -28,5 +28,8 @@ public class Collectable : MonoBehaviour {
 		myManager.numToCollect--;
 
 		Destroy(collectable);
-	}
+        /*coll.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        GetComponent<Rigidbody2D>().velocity = transform.right * Time.deltaTime;*/
+    }
 }
