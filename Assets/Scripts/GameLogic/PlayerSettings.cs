@@ -16,12 +16,24 @@ public class PlayerSettings : MonoBehaviour {
 	//should player wall jump?
 	[Header("Should the player be able to jump off walls?")]
 	public bool isWallJump = true;
+    //sprites for player
+
+
+    //Facing left
+    [Header("Drag in your sprite of the player facing forward")]
+    public Sprite standSprite;
+    //Jump
+    [Header("Drag in your sprite of the player in the air")]
+    public Sprite jumpSprite;
+    //hurt
+    [Header("Drag in your hurt sprite")]
+    public Sprite hurtSprite;
 
 
 
-	//-------- vars below here changed by code-------
-	//is the player grounded?
-	[HideInInspector]
+    //-------- vars below here changed by code-------
+    //is the player grounded?
+    [HideInInspector]
 	public bool isGrounded = false;
 
 	//is the player grounded?
@@ -31,17 +43,26 @@ public class PlayerSettings : MonoBehaviour {
 	//start position
 	private Vector3 startPosition;
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    void Start () 
 	{
 		//set start position
 		startPosition = transform.position;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+
+        if(isGrounded == false)
+        {
+            GetComponent<SpriteRenderer>().sprite = jumpSprite;
+        }
+
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = standSprite;
+        }
+    }
 
 	//check for collisions
 	void OnCollisionEnter2D(Collision2D coll) 
@@ -54,6 +75,7 @@ public class PlayerSettings : MonoBehaviour {
 			transform.position = startPosition;
 			//player hurt animation
 			GetComponent<AudioSource>().Play();
+            GetComponent<SpriteRenderer>().sprite = hurtSprite;
 		}
 	}
 
