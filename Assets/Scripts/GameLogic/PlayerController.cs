@@ -132,13 +132,10 @@ public class PlayerController : MonoBehaviour {
 
 	void CameraFollow()
 	{
-		//Make the maain camera follow the player
+		//Make the main camera follow the player
 
 		myCamera.transform.position = new Vector3(Mathf.Clamp(currentSelectedPlayer.transform.position.x, cameraMinX, cameraMaxX), 
 			Mathf.Clamp(currentSelectedPlayer.transform.position.y, cameraMinY,cameraMaxY), myCamera.transform.position.z);
 	}
-
-
-
 
 }
